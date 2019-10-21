@@ -5,25 +5,22 @@ document.addEventListener('DOMContentLoaded', () => {
     el: "#app",
     data: {
       todos: [
-        { name: "Finish Star Web App", isDone: false},
-        { name: "Look into Vue Radio Buttons", isDone: true},
-        { name: "Buy cat food", isDone: false},
+        { name: "Finish Star Web App", isDone: false, priority: "High"},
+        { name: "Look into Vue Radio Buttons", isDone: true,  priority:"Low"},
+        { name: "Buy cat food", isDone: false, priority:"High"},
       ],
       newTodo: "",
-
-      // priority: [
-      //   { Low: 0 },
-      //   { High: 1 }
-      // ],
-
+      newPriority: ""
     },
     methods: {
       saveNewTodo: function () {
         this.todos.push({
           name: this.newTodo,
-          isDone: false
+          isDone: false,
+          priority: this.newPriority
         });
         this.newTodo = ""
+        this.newPriority = ""
       },
       doTodo: function(index) {
         this.todos[index].isDone = true;

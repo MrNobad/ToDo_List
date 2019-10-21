@@ -14,11 +14,10 @@
       <input type="submit" value="Save new ToDo">
     </form>
 
-    <!-- <input type="radio" id="low" v-bind:value="Low" v-model="priority" >
+    <input type="radio" id="low" value="Low" v-model="newPriority" >
     <label for="low">Low</label>
-    <input type="radio" id="high" v-bind:value="High" v-model="priority" >
+    <input type="radio" id="high" value="High" v-model="newPriority" >
     <label for="high">High</label>
-    <span>{{ priority }}</span> -->
 
     <ul>
       <li v-for="(todo, index) in todos" :class="todo.isDone ? 'done' : 'not-done' ">
