@@ -2,16 +2,17 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>ToDo List</title>
+  <title>To-Do List</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <script src="js/bundle.js"></script>
 </head>
 <body>
-  <h1>ToDo's</h1>
+  <h1>To-Do's</h1>
   <div id="app">
     <form v-on:submit.prevent="saveNewTodo">
       <input id="new-todo" type="text" v-model="newTodo">
-      <input type="submit" value="Save new ToDo">
+      <input class="font" type="submit" value="Save new To-Do">
     </form>
 
     <input type="radio" id="low" value="Low" v-model="newPriority" >
@@ -22,6 +23,7 @@
     <ul>
       <li v-for="(todo, index) in todos" :class="todo.isDone ? 'done' : 'not-done' ">
         <span>{{ todo.name }}</span>
+        <span>{{ todo.priority }}</span>
         <span v-if="todo.isDone">Done!</span>
         <button v-if="!todo.isDone" v-on:click="doTodo(index)">Completed?</button>
       </li>

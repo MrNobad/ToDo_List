@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     data: {
       todos: [
         { name: "Finish Star Web App", isDone: false, priority: "High"},
-        { name: "Look into Vue Radio Buttons", isDone: true,  priority:"Low"},
+        { name: "Look into Vue Radio Buttons", isDone: false,  priority:"Low"},
         { name: "Buy cat food", isDone: false, priority:"High"},
       ],
       newTodo: "",

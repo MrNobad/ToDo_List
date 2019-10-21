@@ -1,52 +1,73 @@
 #app {
-	width: 100%;
-	margin: 0 auto;
-	font-family: 'Space Mono' monospace;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
 }
 
 ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 li {
-	margin: 20px 0;
-	padding: 10px;
-	display: flex;
-	justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 li span {
-	padding: 8px;
+  padding: 8px;
 }
 
 li button {
-	background: #f2360c;
-	color: #fff;
-	border: none;
-	padding: 10px;
-	cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  background: #000000;
+  color: #fff;
+  border: 2px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 li.done {
-	border: 2px solid #1a681e;
-	color: #1a681e;
+  border: 2px solid #1a681e;
+  color: #1a681e;
 }
 
 li.not-done {
-	border: 2px solid #f2360c;
+  border: 2px solid #f2360c;
+  color: #f2360c;
+}
+
+li.Low {
+  border: 2px solid #ffa500;
+}
+
+li.High {
+  border: 2px solid #f2360c;
 }
 
 input[type="text"] {
-	padding: 10px;
-	width: 50%;
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+  width: 50%;
+  border: 2px solid #000000;
 }
 
 button{
-	padding: 10px;
-	background: #000;
-	color: #fff;
-	cursor: pointer;
-	border: 1px solid #000;
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+input.font {
+    font-family: 'Oswald', sans-serif;
+    border: 1px solid #000000;
 }
