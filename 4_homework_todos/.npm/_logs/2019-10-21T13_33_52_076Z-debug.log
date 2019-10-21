@@ -1,0 +1,37 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/Cellar/node/12.8.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install'
+1 verbose cli ]
+2 info using npm@6.10.3
+3 info using node@v12.8.0
+4 verbose npm-session 010bf067b53f5043
+5 silly install runPreinstallTopLevelLifecycles
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 timing stage:rollbackFailedOptional Completed in 2ms
+9 timing stage:runTopLevelLifecycles Completed in 468ms
+10 verbose stack Error: Failed to parse json
+10 verbose stack Unexpected string in JSON at position 311 while parsing '{
+10 verbose stack   "name": "4_homework_todos",
+10 verbose stack   "versi'
+10 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:452:11)
+10 verbose stack     at parseJson (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:104:26)
+10 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:51:5
+10 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:90:16
+10 verbose stack     at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:61:3)
+11 verbose cwd /Users/user/codeclan_homeworks/week_7/day_1/4_homework_todos
+12 verbose Darwin 18.7.0
+13 verbose argv "/usr/local/Cellar/node/12.8.0/bin/node" "/usr/local/bin/npm" "install"
+14 verbose node v12.8.0
+15 verbose npm  v6.10.3
+16 error code EJSONPARSE
+17 error file /Users/user/codeclan_homeworks/week_7/day_1/4_homework_todos/package.json
+18 error JSON.parse Failed to parse json
+18 error JSON.parse Unexpected string in JSON at position 311 while parsing '{
+18 error JSON.parse   "name": "4_homework_todos",
+18 error JSON.parse   "versi'
+19 error JSON.parse Failed to parse package.json data.
+19 error JSON.parse package.json must be actual JSON, not just JavaScript.
+20 verbose exit [ 1, true ]

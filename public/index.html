@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="js/bundle.js"></script>
+</head>
+<body>
+  <h1>ToDo's</h1>
+  <div id="app">
+    <form v-on:submit.prevent="saveNewTodo">
+      <input id="new-todo" type="text" v-model="newTodo">
+      <input type="submit" value="Save new ToDo">
+    </form>
+
+    <!-- <input type="radio" id="low" v-bind:value="Low" v-model="priority" >
+    <label for="low">Low</label>
+    <input type="radio" id="high" v-bind:value="High" v-model="priority" >
+    <label for="high">High</label>
+    <span>{{ priority }}</span> -->
+
+    <ul>
+      <li v-for="(todo, index) in todos" :class="todo.isDone ? 'done' : 'not-done' ">
+        <span>{{ todo.name }}</span>
+        <span v-if="todo.isDone">Done!</span>
+        <button v-if="!todo.isDone" v-on:click="doTodo(index)">Completed?</button>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
