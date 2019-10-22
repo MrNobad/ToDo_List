@@ -21,7 +21,7 @@
     <label for="high">High</label>
 
     <ul>
-      <li v-for="(todo, index) in todos" :class="todo.isDone ? 'done' : 'not-done' ">
+      <li v-for="(todo, index) in todos" value="text" :class="[todo.isDone ? 'done' : 'not-done', todo.priority == 'Low' ? 'Low' : 'High']">
         <span>{{ todo.name }}</span>
         <span>{{ todo.priority }}</span>
         <span v-if="todo.isDone">Done!</span>
